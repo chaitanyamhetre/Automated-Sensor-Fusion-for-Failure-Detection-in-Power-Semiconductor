@@ -59,25 +59,8 @@ When comparing accuracy across different cycles, the model trained from scratch 
 
 Another key observation is the reduction in false positives and false negatives in the Figure \ref{Fig: 5.4(b)} results. The pretrained model seems to have learned more robust feature representations, allowing it to distinguish between classes more effectively. In contrast, the model trained from scratch shows inconsistencies, likely due to a lack of sufficient training data or the inability to learn strong representations from the given dataset alone.
 
-\begin{figure}[!htb]
-    \centering
-    \begin{subfigure}{1.0\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{student/figures/conf_MM.png}
-        \caption{Confusion matrix for Multi-modal (sync. 30 s11 and TDR samples)}
-        \label{Fig: 5.4(a)}
-    \end{subfigure}
-    
-    \begin{subfigure}{1.0\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{student/figures/conf_MM_TL.png}
-        \caption{Confusion matrix for Multi-modal with transfer learning (sync. 30 s11 and TDR samples)}
-        \label{Fig: 5.4(b)}
-    \end{subfigure}
-    
-    \caption{Confusion matrix for Multi-modal transformer model}
-    \label{Fig:5.4}
-\end{figure}
+![Diagram 4](Results/Diagrams/conf_MM.png)
+![Diagram 5](Results/Diagrams/conf_MM_TL.png) 
 
 The multi-modal transformer enhanced with transfer learning achieves the highest test accuracy, demonstrating the value of leveraging pre-trained knowledge in multi-modal systems. Its superior performance underscores the importance of feature reuse and adaptation, especially in scenarios with constrained training data. The imputation-based model, while slightly less accurate, remains a strong contender for applications where missing data is inevitable, as it balances robustness with acceptable performance. The synchronized baseline, though straightforward, serves as a critical benchmark but is often outperformed by more sophisticated approaches.
 

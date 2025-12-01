@@ -25,8 +25,10 @@ The purpose of using these two datasets is to evaluate the model's performance a
 
 Figure 1 illustrates the test accuracy of both models over 10 training cycles. The test results indicate varying levels of accuracy depending on the number of training epochs used. The highest recorded test accuracy for the Uni-modal transformer with the synchronized TDR 30 samples is 83.33\%, observed at one instance. For the TDR dataset containing 75 samples, the model exhibited improved average accuracy. The highest recorded test accuracy for this dataset is 86.67\%, also achieved in multiple test runs. This improvement in accuracy with an increased sample size suggests that a larger dataset contributes to better model generalization.
 
-![Diagram 1](Results/Diagrams/unimodal.png Figure 1: Test accuracy results for Uni-modal transformer)
+| Figure 1: Test accuracy results for Uni-modal transformer |
+![Diagram 1](Results/Diagrams/unimodal.png)
 
+| Figure 2: Confusion matrix for Uni-modal transformer(TDR 30 samples) |
 ![Diagram 2](Results/Diagrams/conf_uni-modal.png)
 
 To further analyze the model’s predictions, confusion matrices for synchronized TDR data are presented for each training cycle  in Figure 2. These matrices provide insight into the model’s classification performance, illustrating the number of correct and incorrect predictions over 10 training cycles.
